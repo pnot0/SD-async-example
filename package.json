@@ -1,0 +1,14 @@
+{
+    "name": "computacao_sd",
+    "version": "1.0.0",
+    "description": "exemplo usando rabbitmq na aula SD",
+    "main": "producer.js",
+    "scripts":{
+        "start-producer": "node producer.js",
+        "start-consumer": "node consumer.js"
+    },
+    "dependencies": {
+        "amqlib": "^0.10.5"
+    }
+
+}
