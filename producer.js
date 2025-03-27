@@ -1,5 +1,4 @@
-const amqp = require("amqlib");
-
+const amqp = require("amqplib");
 async function produce(){
     try{
         const conn = await amqp.connect("amqp://localhost/");
