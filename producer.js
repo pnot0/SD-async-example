@@ -9,9 +9,9 @@ async function produce(){
         let messageCount = 1;
 
         setInterval(() => {
-            const message = 'Mensagem ${messageCount}';
+            const message = 'Mensagem '+messageCount;
             channel.sendToQueue(queue, Buffer.from(message));
-            console.log("enviada: ${message}");
+            console.log("enviada: "+message);
             messageCount++;
         }, 2000);
     }catch (error){
